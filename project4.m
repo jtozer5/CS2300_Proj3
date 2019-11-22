@@ -5,7 +5,7 @@ plot(careerYear, incomeUSD, '*')
 
 [p, S, mu] = polyfit(T.careerYear, T.incomeUSD, 3);
 
-f = polyval(p, careerYear, [], mu);
+f = polyval(p, careerYear, S, mu);
 hold on
 plot(careerYear, f)
 hold off
