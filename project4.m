@@ -4,7 +4,7 @@ T = table(careerYear, incomeUSD);
 
 plot(careerYear, incomeUSD, '*')
 
-[p, S, mu] = polyfit(careerYear, incomeUSD, 3);
+[p, S, mu] = polyfit(T.careerYear, T.incomeUSD, 3);
 
 f = polyval(p, careerYear, S, mu);
 hold on
