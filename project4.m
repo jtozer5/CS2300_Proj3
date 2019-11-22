@@ -17,7 +17,7 @@ s = sprintf('y = (%.1f) x^3 + (%.1f) x^2 + (%.1f) x + (%.1f)',p(1),p(2),p(3),p(4
 disp('Formula: ')
 disp(s)
 
-prediction = (p(1)*15^3) + (p(2)*15^3) + (p(3)*15) + p(4);
+prediction = (p(1)*15^3) + (p(2)*15^2) + (p(3)*15) + p(4);
 disp('Prediction at 15 years: ');
 disp(prediction);
 
